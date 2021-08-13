@@ -14,8 +14,55 @@
     <h2 class='pb-4'>Let me help you choose a language to learn!</h2>
 
     <form id="form1">
-      <h3>Do you have any programming experience?</h3>
+
+      <div class="form-group" id="question1">
+        <h3 class="pt-3">Do you have any programming experience?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="a" />
+            Zilch
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="b" checked />
+            Some
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="c" />
+            Tons
+          </label>
+        </div>
+      </div>
       
+      <div class="form-group" id="question2">
+        <h3 class="pt-3">What do you want to do with programming?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="goal" value="a" />
+            Stage an AI revolution
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="goal" value="b" checked />
+            Build web sites
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="goal" value="c" />
+            Make games
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        See the results!
+      </button>
+
     </form>
 
     <!-- 5 or 6 forms shown in succession -->
