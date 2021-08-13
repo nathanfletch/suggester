@@ -1,168 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Language Suggester</title>
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
-</head>
-<body>
-  <div class="container">
-    <h1 class='py-5'>So you want to learn to code?</h1>
-
-    <h2 class='pb-4'>Let me help you choose a language to learn!</h2>
-
-    <form id="form1">
-
-      <div class="form-group" id="question1">
-        <h3 class="highlight">Do you have any programming experience?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="experience" value="a" />
-            Zilch
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="experience" value="b" checked />
-            Some
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="experience" value="c" />
-            Tons
-          </label>
-        </div>
-      </div>
-      
-      <div class="form-group" id="question2">
-        <h3 class="highlight">What do you want to do with programming?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="goal" value="a" />
-            Stage an AI revolution
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="goal" value="b" checked />
-            Build web sites
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="goal" value="c" />
-            Make games
-          </label>
-        </div>
+  <head>
+    <title>Language Suggester</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="py-5">So you want to learn to code?</h1>
+        <h2 class="pb-4">Let me help you choose a language to learn!</h2>
       </div>
 
-      <div class="form-group" id="question3">
-        <h3 class="highlight">Do you prefer to go with the flow or follow strict guidelines?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="strictness" value="b" />
-            Chaos, baby!
-          </label>
+      <form id="form1">
+        <div class="form-group half-height" id="question1">
+          <h3 class="highlight">Do you have any programming experience?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="experience" value="a" />
+              Zilch
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="experience" value="b" />
+              Some
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="experience" value="c" />
+              Tons
+            </label>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="strictness" value="a" checked />
-            A bit of freedom, within limits.
-          </label>
+
+        <div class="form-group half-height hidden" id="question2">
+          <h3 class="highlight">What do you want to do with programming?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="goal" value="a" />
+              Stage an AI revolution
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="goal" value="b" />
+              Build web sites
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="goal" value="c" />
+              Make games
+            </label>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="strictness" value="c" />
-            Please hold my hand and keep me safe
-          </label>
+
+        <div class="form-group half-height hidden" id="question3">
+          <h3 class="highlight">
+            Do you prefer to go with the flow or follow strict guidelines?
+          </h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="strictness" value="b" />
+              Chaos, baby!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="strictness" value="a" />
+              A bit of freedom, within limits.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="strictness" value="c" />
+              Please hold my hand and keep me safe
+            </label>
+          </div>
         </div>
+
+        <div class="form-group half-height hidden" id="question4">
+          <h3 class="highlight">Talk about your dream car</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="car" value="a" />
+              Give me <strong>all</strong> the bells and whistles. Literally
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="car" value="b" />
+              Volkswagen bus with all my friends
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="car" value="c" />
+              I want to design the engine myself
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group half-height hidden" id="question5">
+          <h3 class="highlight">How should our society be run?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="society" value="a" />
+              Sharing is caring
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="society" value="b" />
+              Let's make some suggestions, and let everybody decide what feels
+              right to them
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="society" value="c" />
+              I, for one, welcome our new corporate overlords
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group half-height hidden" id="question6">
+          <h3 class="highlight">How do you feel about semicolons?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="semicolons" value="a" />
+              I'll pass
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="semicolons" value="b" />
+              They're ok sometimes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="semicolons" value="c" />
+              I <em>gotta</em> have more <strong>semicolons</strong>!
+            </label>
+          </div>
+        </div>
+
+        <div class="hidden" id="submit-button">
+          <button type="submit" class="btn btn-dark my-5">
+            See the results!
+          </button>
+        </div>
+      </form>
+
+      <div id="result" class="hidden jumbotron">
+        <h2>
+          I recommend that you learn
+          <span id="language-result" class="highlight"></span>
+        </h2>
       </div>
-
-      <div class="form-group" id="question4">
-        <h3 class="highlight">Talk about your dream car</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="car" value="a" />
-            I don't care how it runs, but give me all the bells and whistles
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="car" value="b" checked />
-            Volkswagen bus with all my friends
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="car" value="c" />
-            I want to design the engine myself
-          </label>
-        </div>
-      </div>
-
-      <div class="form-group" id="question5">
-        <h3 class="highlight">How should our society be run?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="society" value="a" />
-            Sharing is caring
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="society" value="b" checked />
-            Let's make some regulations, and let everybody decide what feels right to them
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="society" value="c" />
-            I, for one, welcome our new corporate overlords
-          </label>
-        </div>
-      </div>
-
-      <div class="form-group" id="question6">
-        <h3 class="highlight">How do you feel about semicolons?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="semicolons" value="a" />
-            I'll pass
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="semicolons" value="b" checked />
-            They're ok sometimes
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="semicolons" value="c" />
-            I <em>gotta</em> have more <strong>semicolons</strong>!
-          </label>
-        </div>
-      </div>
-
-      <button type="submit" class="btn btn-dark">
-        See the results!
-      </button>
-
-    </form>
-
-    <div id="result" class="hidden py-4">
-      <h2>I recommend that you learn <span id="language-result" class="highlight"></span> </h2>
     </div>
-
-    <!-- 5 or 6 forms shown in succession -->
-    <!-- name -->
-
-    <!-- result page -->
-    <!-- matching attributes! -->
-    <!-- hide/show of methodology -->
-  </div>
-</body>
+  </body>
 </html>

@@ -3,7 +3,12 @@
 }
 
 .highlight {
-  background-color: rgba(0,0,0,.7);
+  background-color: #343a40;
+  padding: 2px;
   color: white;
   /* could add a fancy font */
+}
+
+.half-height {
+  height: 40vh;
 }

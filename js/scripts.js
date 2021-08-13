@@ -11,6 +11,72 @@ function csCount(answerArray) {
 
 //ui logic
 $(document).ready(function () {
+  $("#question1").on("input", function () {
+    $("#question2").slideDown("slow", function () {
+      $("html, body").animate(
+        {
+          scrollTop: $("html, body").get(0).scrollHeight,
+        },
+        1000
+      );
+    });
+  });
+
+  $("#question2").on("input", function () {
+    $("#question3").slideDown("slow", function () {
+      $("html, body").animate(
+        {
+          scrollTop: $("html, body").get(0).scrollHeight,
+        },
+        1000
+      );
+    });
+  });
+
+  $("#question3").on("input", function () {
+    $("#question4").slideDown("slow", function () {
+      $("html, body").animate(
+        {
+          scrollTop: $("html, body").get(0).scrollHeight,
+        },
+        1000
+      );
+    });
+  });
+
+  $("#question4").on("input", function () {
+    $("#question5").slideDown("slow", function () {
+      $("html, body").animate(
+        {
+          scrollTop: $("html, body").get(0).scrollHeight,
+        },
+        1000
+      );
+    });
+  });
+
+  $("#question5").on("input", function () {
+    $("#question6").slideDown("slow", function () {
+      $("html, body").animate(
+        {
+          scrollTop: $("html, body").get(0).scrollHeight,
+        },
+        1000
+      );
+    });
+  });
+
+  $("#question6").on("input", function () {
+    $("#submit-button").slideDown("slow", function () {
+      $("html, body").animate(
+        {
+          scrollTop: $("html, body").get(0).scrollHeight,
+        },
+        1000
+      );
+    });
+  });
+
   $("#form1").submit(function (e) {
     e.preventDefault();
 
@@ -25,26 +91,31 @@ $(document).ready(function () {
     const py = pyCount(answers),
       js = jsCount(answers),
       cs = csCount(answers);
-      
-    console.log(answers);
-    console.log(py, js, cs);
 
     if (py > js && py > cs) {
       $("#language-result").text("Python");
-    } else if ( js > py && js > cs ) {
+    } else if (js > py && js > cs) {
       $("#language-result").text("JavaScript");
-    } else if ( cs > py && cs > js) {
+    } else if (cs > py && cs > js) {
       $("#language-result").text("C#");
-    } else if ( py === js && py === cs ) {
+    } else if (py === js && py === cs) {
       $("#language-result").text("Python, JavaScript, or C#");
-    } else if ( py === js ) {
+    } else if (py === js) {
       $("#language-result").text("Python or JavaScript");
-    } else if ( py === cs ) {
+    } else if (py === cs) {
       $("#language-result").text("Python or C#");
     } else {
       $("#language-result").text("Javascript or C#");
     }
-
-    $("#result").show();
+console.log(py, js, cs)
+    $("#result").slideDown("slow", function () {
+      console.log("hi")
+      $("html, body").animate(
+        {
+          scrollTop: $("html, body").get(0).scrollHeight,
+        },
+        1000
+      );
+    });;
   });
 });
