@@ -10,13 +10,18 @@
   <body>
     <div class="container">
       <div class="jumbotron tall">
-        <h1 class="py-5">So you want to learn to <span class="bg-dark highlight p-1">code</span>?</h1>
-        <h2 class="pb-4">Let me help you choose a language to learn!</h2>
+        <h1 class="py-5">
+          So you want to learn to
+          <span class="bg-dark highlight p-1">code</span>?
+        </h1>
+        <h2 class="pb-5">Let me help you choose a language to learn!</h2>
       </div>
 
       <form id="form1">
         <div class="form-group half-height" id="question1">
-          <h3 class="bg-dark text-light p-1">Do you have any programming experience?</h3>
+          <h3 class="bg-dark text-light p-1">
+            Do you have any programming experience?
+          </h3>
           <div class="radio">
             <label>
               <input type="radio" name="experience" value="a" />
@@ -38,7 +43,9 @@
         </div>
 
         <div class="form-group half-height hidden" id="question2">
-          <h3 class="bg-dark text-light p-1">What do you want to do with programming?</h3>
+          <h3 class="bg-dark text-light p-1">
+            What do you want to do with programming?
+          </h3>
           <div class="radio">
             <label>
               <input type="radio" name="goal" value="a" />
@@ -57,6 +64,17 @@
               <span>Make games</span>
             </label>
           </div>
+          <label class="m-2" id="importance">
+            How important is this question to you?
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              id="slider"
+              class="m-2"
+            />
+          </label>
         </div>
 
         <div class="form-group half-height hidden" id="question3">
@@ -116,8 +134,10 @@
           <div class="radio">
             <label>
               <input type="radio" name="society" value="b" />
-              <span>Let's make some suggestions, and let everybody decide what feels
-                right to them</span>
+              <span
+                >Let's make some suggestions, and let everybody decide what
+                feels right to them</span
+              >
             </label>
           </div>
           <div class="radio">
@@ -129,7 +149,9 @@
         </div>
 
         <div class="form-group half-height hidden" id="question6">
-          <h3 class="bg-dark text-light p-1">How do you feel about semicolons?</h3>
+          <h3 class="bg-dark text-light p-1">
+            How do you feel about semicolons?
+          </h3>
           <div class="radio">
             <label>
               <input type="radio" name="semicolons" value="a" />
@@ -145,7 +167,9 @@
           <div class="radio">
             <label>
               <input type="radio" name="semicolons" value="c" />
-              <span>I <em>gotta</em> have more <strong>semicolons</strong>!</span>
+              <span
+                >I <em>gotta</em> have more <strong>semicolons</strong>!</span
+              >
             </label>
           </div>
         </div>
@@ -160,7 +184,50 @@
       <div id="result" class="hidden jumbotron">
         <h2>
           I recommend that you learn
-          <span id="language-result" class="clickable"></span>
+          <a
+            id="js1"
+            class="hidden"
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="blank"
+            >JavaScript</a
+          >
+          <a
+            id="py1"
+            class="hidden"
+            href="https://www.python.org/"
+            target="blank"
+            >Python</a
+          >
+          <a
+            id="cs1"
+            class="hidden"
+            href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+            target="blank"
+            >C#</a
+          >
+          <span class="hidden" id="or1"> or </span>
+          <a
+            id="js2"
+            class="hidden"
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="blank"
+            >JavaScript</a
+          >
+          <a
+            id="cs2"
+            class="hidden"
+            href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+            target="blank"
+            >C#</a
+          >
+          <span class="hidden" id="or2"> or </span>
+          <a
+            id="cs3"
+            class="hidden"
+            href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+            target="blank"
+            >C#</a
+          >.
         </h2>
       </div>
 

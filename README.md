@@ -30,17 +30,14 @@ This project gathers user preferences with radio inputs. Based on the user input
 
 ## Known Bugs
 
-Language links at the bottom of the page are broken
-<!-- There are no known bugs at this time. -->
+On question 2, the next question is shown before both inputs are entered.
 
 ## Future Plans
 
 Additional features will be implemented such as:
 
-- Slider input to allow the user to indicate which questions are important to them 
-
-## Credit 
--[Yellow buttons](https://codepen.io/havardob/pen/dyYXBBr)
+- Add additional slider inputs to allow the user to indicate which questions are important to them.
+- Change slider color to yellow.
 
 ## Contact
 

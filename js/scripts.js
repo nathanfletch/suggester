@@ -82,32 +82,50 @@ $(document).ready(function () {
 
     const experience = $("input:radio[name=experience]:checked").val(),
       goal = $("input:radio[name=goal]:checked").val(),
+      importance = parseInt($("#slider").val()),
       strictness = $("input:radio[name=strictness]:checked").val(),
       car = $("input:radio[name=car]:checked").val(),
       society = $("input:radio[name=society]:checked").val(),
       semicolons = $("input:radio[name=semicolons]:checked").val(),
       answers = [experience, goal, strictness, car, society, semicolons];
 
-    const py = pyCount(answers),
+      //this gives double weight to the goal response if importance is 50 or higher:
+      if (importance >= 50) {
+        answers.push(goal);
+      }
+      console.log(answers)
+      
+      const py = pyCount(answers),
       js = jsCount(answers),
       cs = csCount(answers);
+      console.log(py, js, cs)
 
     if (py > js && py > cs) {
-      $("#language-result").text("Python");
+      $("#py1").show();
     } else if (js > py && js > cs) {
-      $("#language-result").text("JavaScript");
+      $("#js1").show();
     } else if (cs > py && cs > js) {
-      $("#language-result").text("C#");
+      $("#cs1").show();
     } else if (py === js && py === cs) {
-      $("#language-result").text("Python, JavaScript, or C#");
+      $("#py1").show();
+      $(".or1").show();
+      $("#js2").show();
+      $("#or2").show();
+      $("#cs3").show();
     } else if (py === js) {
-      $("#language-result").text("Python or JavaScript");
+      $("#py1").show();
+      $("#or1").show();
+      $("#js2").show();
     } else if (py === cs) {
-      $("#language-result").text("Python or C#");
+      $("#py1").show();
+      $("#or1").show();
+      $("#cs2").show();
     } else {
-      $("#language-result").text("Javascript or C#");
+      $("#js1").show();
+      $("#or1").show();
+      $("#cs2").show();
     }
-    
+
     $("#result").slideDown("slow", function () {
       $("html, body").animate(
         {
@@ -115,6 +133,6 @@ $(document).ready(function () {
         },
         1000
       );
-    });;
+    });
   });
 });

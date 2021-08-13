@@ -2,8 +2,6 @@
   display: none;
 }
 
-
-
 .half-height {
   height: 40vh;
 }
@@ -16,29 +14,31 @@
   color: yellow;
 }
 
-.clickable {
-  background:
-linear-gradient(
-  to bottom, yellow 0%,
-  yellow 100%
-);
-background-position: 0 100%;
-background-repeat: repeat-x;
-background-size: 4px 4px;
-color: #000;
-text-decoration: none;
-transition: background-size .2s;
+/* #importance {
+  margin-left: 10px;
+} */
+
+a {
+  background: linear-gradient(to bottom, yellow 0%, yellow 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size 0.2s;
 }
 
-.clickable:hover {
-background-size: 4px 50px;
+a:hover {
+  text-decoration: none;
+  color: black;
+  background-size: 4px 50px;
 }
 
 div .radio {
   padding: 10px;
 }
 
-input[type='radio']:after {
+input[type="radio"]:after {
   width: 20px;
   height: 20px;
   border-radius: 20px;
@@ -46,13 +46,13 @@ input[type='radio']:after {
   left: -1px;
   position: relative;
   background-color: #d1d3d1;
-  content: '';
+  content: "";
   display: inline-block;
   visibility: visible;
   border: 2px solid black;
 }
 
-input[type='radio']:checked:after {
+input[type="radio"]:checked:after {
   width: 20px;
   height: 20px;
   border-radius: 20px;
@@ -60,7 +60,7 @@ input[type='radio']:checked:after {
   left: -1px;
   position: relative;
   background-color: black;
-  content: '';
+  content: "";
   display: inline-block;
   visibility: visible;
   border: 5px double yellow;
@@ -69,4 +69,3 @@ input[type='radio']:checked:after {
 label span {
   margin-left: 15px;
 }
-
