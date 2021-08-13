@@ -1,5 +1,5 @@
-# Project Title
-Simple overview of use/purpose.  
+# Programming Language Suggester
+The definitive source on making future career plans in the programming industry.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -11,7 +11,7 @@ Nathan Fletcher
 
 ## Description
 
-This project is an opportunity to demonstrate my abilities using new tools and technologies
+This project gathers user preferences with radio inputs. Based on the user input, suggestions are chosen using a branching algorithm and displayed to the user.
 
 ## Techonologies used:
 
@@ -19,10 +19,11 @@ This project is an opportunity to demonstrate my abilities using new tools and t
 - HTML
 - CSS
 - Bootstrap
+- jQuery
 
 ## Setup
 
-1. Clone the source code from the [repo](https://github.com/nathanfletch/portfolio)
+1. Clone the source code from the [repo](https://github.com/nathanfletch/suggester)
 2. Navigate to the directory on your computer.
 3. Open the index.html file in your browser.
 
@@ -36,8 +37,9 @@ There are no known bugs at this time.
 Additional features will be implemented such as:
 
 - CSS animation
-- Interactive elements
-- Links to additional projects
+- More custom CSS
+- Slider input to allow the user to indicate which questions are important to them 
+- Custom responses 
 
 ## Contact
 
