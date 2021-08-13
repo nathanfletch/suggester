@@ -30,16 +30,17 @@ This project gathers user preferences with radio inputs. Based on the user input
 
 ## Known Bugs
 
-There are no known bugs at this time.
+Language links at the bottom of the page are broken
+<!-- There are no known bugs at this time. -->
 
 ## Future Plans
 
 Additional features will be implemented such as:
 
-- CSS animation
-- More custom CSS
 - Slider input to allow the user to indicate which questions are important to them 
-- Custom responses 
+
+## Credit 
+-[Yellow buttons](https://codepen.io/havardob/pen/dyYXBBr)
 
 ## Contact
 

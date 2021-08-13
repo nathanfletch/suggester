@@ -33,3 +33,40 @@ transition: background-size .2s;
 .clickable:hover {
 background-size: 4px 50px;
 }
+
+div .radio {
+  padding: 10px;
+}
+
+input[type='radio']:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  top: -4px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid black;
+}
+
+input[type='radio']:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  top: -4px;
+  left: -1px;
+  position: relative;
+  background-color: black;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 5px double yellow;
+}
+
+label span {
+  margin-left: 15px;
+}
+
