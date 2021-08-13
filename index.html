@@ -59,11 +59,103 @@
         </div>
       </div>
 
+      <div class="form-group" id="question3">
+        <h3 class="pt-3">Do you prefer to go with the flow or follow strict guidelines?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="strictness" value="b" />
+            Chaos, baby!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="strictness" value="a" checked />
+            A bit of freedom, within limits.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="strictness" value="c" />
+            Please hold my hand and keep me safe
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" id="question4">
+        <h3 class="pt-3">Talk about your dream car</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="car" value="a" />
+            I don't care how it runs, but give me all the bells and whistles
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="car" value="b" checked />
+            Volkswagen bus with all my friends
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="car" value="c" />
+            I want to design the engine myself
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" id="question5">
+        <h3 class="pt-3">How should our society be run?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="society" value="a" />
+            Sharing is caring
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="society" value="b" checked />
+            Let's make some regulations, and let everybody decide what feels right to them
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="society" value="c" />
+            I, for one, welcome our new corporate overlords
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" id="question6">
+        <h3 class="pt-3">How do you feel about semicolons?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="semicolons" value="a" />
+            I'll pass
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="semicolons" value="b" checked />
+            They're ok sometimes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="semicolons" value="c" />
+            I <em>gotta</em> have more <strong>semicolons</strong>!
+          </label>
+        </div>
+      </div>
+
       <button type="submit" class="btn btn-primary">
         See the results!
       </button>
 
     </form>
+
+    <div id="result" class="hidden py-4">
+      <h2>I recommend that you learn <span id="language-result" class="highlight"></span> </h2>
+    </div>
 
     <!-- 5 or 6 forms shown in succession -->
     <!-- name -->

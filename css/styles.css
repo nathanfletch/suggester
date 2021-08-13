@@ -1,0 +1,8 @@
+.hidden {
+  display: none;
+}
+
+.highlight {
+  background-color: rgba(0,0,0,.5);
+  /* could add a fancy font */
+}
