@@ -3,6 +3,7 @@
 }
 
 .highlight {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.7);
+  color: white;
   /* could add a fancy font */
 }

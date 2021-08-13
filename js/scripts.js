@@ -29,11 +29,21 @@ $(document).ready(function () {
     console.log(answers);
     console.log(py, js, cs);
 
-    // if (py > js && py > cs) {
-    //   $("#language-result").text("JavaScript");
-    // } else if 
-      
-    $("#language-result").text("JavaScript");
+    if (py > js && py > cs) {
+      $("#language-result").text("Python");
+    } else if ( js > py && js > cs ) {
+      $("#language-result").text("JavaScript");
+    } else if ( cs > py && cs > js) {
+      $("#language-result").text("C#");
+    } else if ( py === js && py === cs ) {
+      $("#language-result").text("Python, JavaScript, or C#");
+    } else if ( py === js ) {
+      $("#language-result").text("Python or JavaScript");
+    } else if ( py === cs ) {
+      $("#language-result").text("Python or C#");
+    } else {
+      $("#language-result").text("Javascript or C#");
+    }
 
     $("#result").show();
   });
