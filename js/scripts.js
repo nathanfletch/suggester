@@ -107,9 +107,8 @@ $(document).ready(function () {
     } else {
       $("#language-result").text("Javascript or C#");
     }
-console.log(py, js, cs)
+    
     $("#result").slideDown("slow", function () {
-      console.log("hi")
       $("html, body").animate(
         {
           scrollTop: $("html, body").get(0).scrollHeight,

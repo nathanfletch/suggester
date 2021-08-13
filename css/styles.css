@@ -2,13 +2,34 @@
   display: none;
 }
 
-.highlight {
-  background-color: #343a40;
-  padding: 2px;
-  color: white;
-  /* could add a fancy font */
-}
+
 
 .half-height {
   height: 40vh;
+}
+
+.tall {
+  height: 60vh;
+}
+
+.highlight {
+  color: yellow;
+}
+
+.clickable {
+  background:
+linear-gradient(
+  to bottom, yellow 0%,
+  yellow 100%
+);
+background-position: 0 100%;
+background-repeat: repeat-x;
+background-size: 4px 4px;
+color: #000;
+text-decoration: none;
+transition: background-size .2s;
+}
+
+.clickable:hover {
+background-size: 4px 50px;
 }

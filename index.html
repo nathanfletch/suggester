@@ -9,14 +9,14 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1 class="py-5">So you want to learn to code?</h1>
+      <div class="jumbotron tall">
+        <h1 class="py-5">So you want to learn to <span class="bg-dark highlight p-1">code</span>?</h1>
         <h2 class="pb-4">Let me help you choose a language to learn!</h2>
       </div>
 
       <form id="form1">
         <div class="form-group half-height" id="question1">
-          <h3 class="highlight">Do you have any programming experience?</h3>
+          <h3 class="bg-dark text-light p-1">Do you have any programming experience?</h3>
           <div class="radio">
             <label>
               <input type="radio" name="experience" value="a" />
@@ -38,7 +38,7 @@
         </div>
 
         <div class="form-group half-height hidden" id="question2">
-          <h3 class="highlight">What do you want to do with programming?</h3>
+          <h3 class="bg-dark text-light p-1">What do you want to do with programming?</h3>
           <div class="radio">
             <label>
               <input type="radio" name="goal" value="a" />
@@ -60,7 +60,7 @@
         </div>
 
         <div class="form-group half-height hidden" id="question3">
-          <h3 class="highlight">
+          <h3 class="bg-dark text-light p-1">
             Do you prefer to go with the flow or follow strict guidelines?
           </h3>
           <div class="radio">
@@ -84,11 +84,11 @@
         </div>
 
         <div class="form-group half-height hidden" id="question4">
-          <h3 class="highlight">Talk about your dream car</h3>
+          <h3 class="bg-dark text-light p-1">Talk about your dream car</h3>
           <div class="radio">
             <label>
               <input type="radio" name="car" value="a" />
-              Give me <strong>all</strong> the bells and whistles. Literally
+              I'm never going to look under the hood, and I want it to be easy to use. 
             </label>
           </div>
           <div class="radio">
@@ -106,7 +106,7 @@
         </div>
 
         <div class="form-group half-height hidden" id="question5">
-          <h3 class="highlight">How should our society be run?</h3>
+          <h3 class="bg-dark text-light p-1">How should our society be run?</h3>
           <div class="radio">
             <label>
               <input type="radio" name="society" value="a" />
@@ -129,7 +129,7 @@
         </div>
 
         <div class="form-group half-height hidden" id="question6">
-          <h3 class="highlight">How do you feel about semicolons?</h3>
+          <h3 class="bg-dark text-light p-1">How do you feel about semicolons?</h3>
           <div class="radio">
             <label>
               <input type="radio" name="semicolons" value="a" />
@@ -160,7 +160,7 @@
       <div id="result" class="hidden jumbotron">
         <h2>
           I recommend that you learn
-          <span id="language-result" class="highlight"></span>
+          <span id="language-result" class="clickable"></span>
         </h2>
       </div>
     </div>
